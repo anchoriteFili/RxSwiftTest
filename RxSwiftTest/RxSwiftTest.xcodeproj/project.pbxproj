@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A8E8B72D99E31EB032823331 /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C29F08315BE4149C457910 /* Pods_RxSwiftTest.framework */; };
+		D6D58551205229DA002155B9 /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */; };
+		D6D58553205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */; };
+		D6D5855520522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */; };
 		D6E58A2A1FEA54050060DC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E58A291FEA54050060DC91 /* AppDelegate.swift */; };
 		D6E58A2C1FEA54050060DC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E58A2B1FEA54050060DC91 /* ViewController.swift */; };
 		D6E58A2F1FEA54050060DC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E58A2D1FEA54050060DC91 /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 		42ACD7419227E505446078DC /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		94C29F08315BE4149C457910 /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD62CE1394412762C540D48 /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
+		D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimplePickerViewExampleViewController.storyboard; sourceTree = "<group>"; };
+		D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewAdapterExampleViewController.swift; sourceTree = "<group>"; };
 		D6E58A261FEA54050060DC91 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E58A291FEA54050060DC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6E58A2B1FEA54050060DC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				D6E58A571FEA541E0060DC91 /* README.md */,
 				D6E58A291FEA54050060DC91 /* AppDelegate.swift */,
 				D6E58A2B1FEA54050060DC91 /* ViewController.swift */,
+				D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */,
+				D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */,
+				D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */,
 				D6E58A2D1FEA54050060DC91 /* Main.storyboard */,
 				D6E58A301FEA54050060DC91 /* Assets.xcassets */,
 				D6E58A321FEA54050060DC91 /* LaunchScreen.storyboard */,
@@ -263,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E58A341FEA54050060DC91 /* LaunchScreen.storyboard in Resources */,
+				D6D58553205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard in Resources */,
 				D6E58A311FEA54050060DC91 /* Assets.xcassets in Resources */,
 				D6E58A581FEA541F0060DC91 /* README.md in Resources */,
 				D6E58A2F1FEA54050060DC91 /* Main.storyboard in Resources */,
@@ -326,10 +336,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E58A2C1FEA54050060DC91 /* ViewController.swift in Sources */,
+				D6D5855520522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift in Sources */,
 				D6E58A2A1FEA54050060DC91 /* AppDelegate.swift in Sources */,
+				D6D58551205229DA002155B9 /* SimplePickerViewExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
