@@ -20,7 +20,6 @@ class SimplePickerViewExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         Observable.just([1,2,3])
             .bind(to: pickView1.rx.itemTitles) { _, item in
                 return "\(item)"
@@ -58,12 +57,14 @@ class SimplePickerViewExampleViewController: UIViewController {
                 view.backgroundColor = item
                 return view
             }
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
         
+        pickView3.rx.modelSelected(UIColor.self)
+            .subscribe(onNext: { models in
+                print("models selected 3: \(models)")
+            })
+            .disposed(by: disposeBag)
         
-        
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -72,7 +73,6 @@ class SimplePickerViewExampleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

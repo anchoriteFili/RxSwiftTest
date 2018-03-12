@@ -11,6 +11,9 @@
 		D6D58551205229DA002155B9 /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */; };
 		D6D58553205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */; };
 		D6D5855520522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */; };
+		D6D5855720528D04002155B9 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D5855620528D04002155B9 /* ImagePicker.storyboard */; };
+		D6D5855920528D16002155B9 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5855820528D16002155B9 /* ImagePickerController.swift */; };
+		D6D5855B20528D46002155B9 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5855A20528D46002155B9 /* UIImagePickerController+RxCreate.swift */; };
 		D6E58A2A1FEA54050060DC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E58A291FEA54050060DC91 /* AppDelegate.swift */; };
 		D6E58A2C1FEA54050060DC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E58A2B1FEA54050060DC91 /* ViewController.swift */; };
 		D6E58A2F1FEA54050060DC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E58A2D1FEA54050060DC91 /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 		D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
 		D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimplePickerViewExampleViewController.storyboard; sourceTree = "<group>"; };
 		D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewAdapterExampleViewController.swift; sourceTree = "<group>"; };
+		D6D5855620528D04002155B9 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		D6D5855820528D16002155B9 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		D6D5855A20528D46002155B9 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		D6E58A261FEA54050060DC91 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E58A291FEA54050060DC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6E58A2B1FEA54050060DC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,9 @@
 				D6D58550205229DA002155B9 /* SimplePickerViewExampleViewController.swift */,
 				D6D5855420522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift */,
 				D6D58552205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard */,
+				D6D5855820528D16002155B9 /* ImagePickerController.swift */,
+				D6D5855A20528D46002155B9 /* UIImagePickerController+RxCreate.swift */,
+				D6D5855620528D04002155B9 /* ImagePicker.storyboard */,
 				D6E58A2D1FEA54050060DC91 /* Main.storyboard */,
 				D6E58A301FEA54050060DC91 /* Assets.xcassets */,
 				D6E58A321FEA54050060DC91 /* LaunchScreen.storyboard */,
@@ -273,6 +282,7 @@
 			files = (
 				D6E58A341FEA54050060DC91 /* LaunchScreen.storyboard in Resources */,
 				D6D58553205229ED002155B9 /* SimplePickerViewExampleViewController.storyboard in Resources */,
+				D6D5855720528D04002155B9 /* ImagePicker.storyboard in Resources */,
 				D6E58A311FEA54050060DC91 /* Assets.xcassets in Resources */,
 				D6E58A581FEA541F0060DC91 /* README.md in Resources */,
 				D6E58A2F1FEA54050060DC91 /* Main.storyboard in Resources */,
@@ -358,6 +368,8 @@
 			files = (
 				D6E58A2C1FEA54050060DC91 /* ViewController.swift in Sources */,
 				D6D5855520522A91002155B9 /* CustomPickerViewAdapterExampleViewController.swift in Sources */,
+				D6D5855920528D16002155B9 /* ImagePickerController.swift in Sources */,
+				D6D5855B20528D46002155B9 /* UIImagePickerController+RxCreate.swift in Sources */,
 				D6E58A2A1FEA54050060DC91 /* AppDelegate.swift in Sources */,
 				D6D58551205229DA002155B9 /* SimplePickerViewExampleViewController.swift in Sources */,
 			);
